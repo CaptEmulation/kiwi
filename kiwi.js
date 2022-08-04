@@ -822,6 +822,7 @@ var kiwi = exports || kiwi || {}, exports;
   }
 
   function encodeCodeForField(field, definitions) {
+    var code
     switch (field.type) {
       case 'bool': {
         code = 'bb.writeByte(value);';
